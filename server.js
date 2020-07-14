@@ -1,0 +1,13 @@
+let express = require("express");
+let app = express();
+let bodyparser = require("body-parser");
+let cors = require("cors");
+app.use(cors());
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({ extended: false }));
+app.use("/fetch",require("./src/RestApi's/fetch"));
+app.use("/insert",require("./src/RestApi's/insert"));
+app.use("/update",require("./src/RestApi's/update"));
+app.use("/remove",require("./src/RestApi's/delete"));
+app.listen(8000);
+console.log("server listing the port no.8000");

@@ -1,0 +1,29 @@
+#category
+{
+margin-top: 20px;
+border: solid 2px;
+}
+#sideNav
+{
+background-color: ;
+}
+.col-10
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 21px;
+    justify-content:flex-start; 
+}
+.col-10 > div
+{
+    margin: 5px;
+}
+#footerNav
+{
+    display: flex;
+    justify-content: flex-start;
+}
+#footerNav > li
+{
+    margin: 20px;
+}
