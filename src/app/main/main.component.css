@@ -1,11 +1,12 @@
 #category
 {
-margin-top: 20px;
+margin-top: 2px;
 border: solid 2px;
+margin-left: -1px;
 }
 #sideNav
 {
-background-color: ;
+background-color: whitesmoke ;
 }
 .col-10
 {
@@ -13,6 +14,16 @@ background-color: ;
     flex-wrap: wrap;
     margin-top: 21px;
     justify-content:flex-start; 
+    height: max-content;
+}
+.col-2
+{ 
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start; 
+    height: max-content;
+   
 }
 .col-10 > div
 {
@@ -21,9 +32,42 @@ background-color: ;
 #footerNav
 {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    
 }
-#footerNav > li
+#footerNav > ul > li
 {
-    margin: 20px;
+   margin: 1 px;
+}
+.circle
+{
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 63px;
+    margin-top: 18px;
+}
+#plus
+{
+    font-size: 24px;
+    margin-top: 14px;
+    color: black;
+}
+.dropdown-divider {
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #000000;
+}
+#sidenav ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidenav ul li a:hover {
+    color: #7386D5;
+    background: #fff;
 }
